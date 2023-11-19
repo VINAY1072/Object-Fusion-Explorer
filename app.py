@@ -311,4 +311,4 @@ def image_to_base64(image):
 if __name__ == '__main__':
     if not os.path.exists(app.config['UPLOAD_FOLDER']):
         os.makedirs(app.config['UPLOAD_FOLDER'])
-    app.run(debug=True,host="0.0.0.0",port=5000)
+    app.run(debug=True)
