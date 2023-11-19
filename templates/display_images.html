@@ -1,0 +1,66 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Display Images</title>
+</head>
+<body>
+    <a href="/">Back to Home</a>
+    <h1>Uploaded Images</h1>
+    {% for image_path in images %}
+        <img src="data:image/png;base64,{{ image_path }}" alt="Uploaded Image">
+    {% endfor %}
+    <img src="data:image/png;base64,{{ result_img }}" alt="Resultant Image">
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="static/images/logo.svg" type="image/svg">
+    <title>CV Project</title>
+    <style>
+        body {
+            background-color: #1D2026;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        img {
+            max-width: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="body-wrap">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="/">
+                                <img class="header-logo-image" src="static/images/logo.svg" alt="Logo">
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <h1>Uploaded Images</h1>
+    {% for image_path in images %}
+        <img src="data:image/png;base64,{{ image_path }}" alt="Uploaded Image">
+    {% endfor %}
+    <h1>Resultant Image</h1>
+    <img src="data:image/png;base64,{{ result_img }}" alt="Resultant Image">
+</body>
+</html>

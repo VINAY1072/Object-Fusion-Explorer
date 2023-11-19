@@ -1,0 +1,116 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <a href="/">Back to Home</a>
+    <h1>Number Page</h1>
+    
+<form action="/upload" method="post">
+    <label for="imageCount">Enter the number of images to upload:</label>
+    <input type="number" id="imageCount" name="imageCount" required>
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="static/images/logo.svg" type="image/svg">
+    <title>CV Project</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/photo.css">
+    <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+
+<body class="is-boxed has-animations">
+    <div class="body-wrap">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="/">
+                                <img class="header-logo-image" src="static/images/logo.svg" alt="Logo">
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+                        <div class="hero-copy">
+                            <h1 class="hero-title mt-0">Image Blending</h1>
+                            <p class="hero-paragraph">Unleash the creative power of VisionBlend Pro by seamlessly
+                                blending images with an artistic mosaic effect. This feature allows users to
+                                artistically obscure or highlight specific regions within images, adding a
+                                unique and visually stunning layer to their visual content.
+                            </p>
+                        </div>
+                        <div class="hero-figure anime-element">
+                            <svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
+                                <rect width="528" height="396" style="fill:transparent;" />
+                            </svg>
+                            <div class="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>
+                            <div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
+                            <div class="hero-figure-box hero-figure-box-03" data-rotation="0deg"></div>
+                            <div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg"></div>
+                            <div class="hero-figure-box hero-figure-box-05"></div>
+                            <div class="hero-figure-box hero-figure-box-06"></div>
+                            <div class="hero-figure-box hero-figure-box-07"></div>
+                            <div class="hero-figure-box hero-figure-box-08" data-rotation="-22deg"></div>
+                            <div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg"></div>
+                            <div class="hero-figure-box hero-figure-box-10" data-rotation="-50deg"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="images_count">
+                <form action="/upload" method="post">
+                    <label for="imageCount">Enter the number of images to upload:</label>
+                    <input type="number" id="imageCount" name="imageCount" required>
+                    <br><br>
+                    <div class="sub">
+                        <input style="padding:10px 4px;margin-left: 125px" type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+            
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-copyright">Done by, <br>CS20B1130 G Praneeth Kumar<br>CS20B1072 P Vinay<br>CS20B1071
+                    Gokul K<br>CS20B1079 Y V Durga Prasad<br><br></div>
+                <div class="footer-copyright">&copy; 2023, all rights reserved</div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="static/js/main.min.js"></script>
+    <script src="static/js/photo.js"></script>
+</body>
+
+</html>
