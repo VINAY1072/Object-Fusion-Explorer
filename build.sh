@@ -1,5 +1,5 @@
 set -o errexit
 
 pip install --upgrade pip
-brew upgrade python3
+sudo apt install python3.11.4
 pip install -r requirements.txt
